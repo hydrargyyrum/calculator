@@ -1,3 +1,11 @@
+/*!
+\file
+\brief Реализация calc.h
+\author VALERIYA
+\version 1.0
+
+Записки сумасшедшего
+*/
 // ======================================================================
 //  Calculator.cpp
 // ======================================================================
@@ -8,10 +16,25 @@
 //  Copyright (c) 2017 by Max Schlee
 // ======================================================================
 
+/**
+ * \include QtWidgets
+ */
 #include <QtWidgets>
+
+/**
+ * \include Calculator.h
+ */
 #include "Calculator.h"
 
 // ----------------------------------------------------------------------
+/**
+ * \brief Калькуляторимся
+ * \author Все еще VALERIYA
+ * \param [in] pwgt Строчка пошла
+ *
+ * Ох уж эта ягодка-малинка, укуси меня пчела!
+ * Кстати, здесь можно в модуль один забабахать все. Утречком глянуть
+ */
 Calculator::Calculator(QWidget *pwgt /*= 0*/) : QWidget(pwgt)
 {
     m_plcd = new QLCDNumber(12);
@@ -39,6 +62,14 @@ Calculator::Calculator(QWidget *pwgt /*= 0*/) : QWidget(pwgt)
 }
 
 // ----------------------------------------------------------------------
+/**
+ * \brief Батонимся
+ * \author VALERIYA
+ * \param [in] str Строчка пошла
+ * \return Важные цифры
+ *
+ * Бац Бац Бац
+ */
 QPushButton *Calculator::createButton(const QString &str)
 {
     QPushButton *pcmd = new QPushButton(str);
@@ -48,6 +79,12 @@ QPushButton *Calculator::createButton(const QString &str)
 }
 
 // ----------------------------------------------------------------------
+/**
+ * \brief Реализация невероятных расчетов
+ * \author VALERIYA
+ *
+ * А на часах уже за 00
+ */
 void Calculator::calculate()
 {
     qreal fOperand2 = m_stk.pop().toFloat();
@@ -75,6 +112,11 @@ void Calculator::calculate()
 }
 
 // ----------------------------------------------------------------------
+/**
+ * \brief Реализация кликера кнопки
+ *
+ * Ура Ура Ура
+ */
 void Calculator::slotButtonClicked()
 {
     QString str = ((QPushButton *)sender())->text();

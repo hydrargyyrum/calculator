@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['calculator_1',['Calculator',['../class_calculator.html',1,'']]]
+  ['calculator_9',['Calculator',['../class_calculator.html',1,'']]]
 ];

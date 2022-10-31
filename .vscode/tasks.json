@@ -5,6 +5,7 @@
             "label": "C/C++: gcc сборка активного файла",
             "command": "/usr/bin/gcc",
             "args": [
+                "-std=c++17",
                 "-fdiagnostics-color=always",
                 "-g",
                 "${file}",
