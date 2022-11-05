@@ -19,10 +19,10 @@
 // ======================================================================
 
 /**
- * \include QApplication
+ * \include QApplicationm
  * \exception fatal error: QApplication: Нет такого файла или каталога
  */
-///#include <QApplication>
+#include <QApplication>
 /**
  * \include Calculator.h
  */
@@ -40,7 +40,7 @@
 int main(int argc, char **argv)
 {
 
-    // QApplication app(argc, argv);
+    QApplication app(argc, argv);
     Calculator calculator; ///< Calc // ПОЧЕМУ НЕ РАБОТАЕТ?
     calculator.setWindowTitle("Calculator");
     calculator.resize(230, 200);
