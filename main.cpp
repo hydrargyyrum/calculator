@@ -1,13 +1,3 @@
-/*!
-\file
-\brief Так-так, это main!
-\author VALERIYA
-
-\date а на часах 00 и 1 ноября 2022
-\version 1.0
-
-Данный файл содержит в себе себя
-*/
 // ======================================================================
 //  main.cpp
 // ======================================================================
@@ -18,14 +8,23 @@
 //  Copyright (c) 2017 by Max Schlee
 // ======================================================================
 
-/**
- * \include QApplicationm
- * \exception fatal error: QApplication: Нет такого файла или каталога
+/*!
+\file
+\brief Так-так, это main!
+\author VALERIYA
+
+\date а на часах 00 и 1 ноября 2022
+\version 1.0
+
+Данный файл содержит в себе себя
+*/
+
+/*!
+ * \include QApplication
+ * \include Calculator.h
+ *  \exception fatal error: QApplication: Нет такого файла или каталога
  */
 #include <QApplication>
-/**
- * \include Calculator.h
- */
 #include "Calculator.h"
 
 // ----------------------------------------------------------------------
@@ -39,11 +38,13 @@
  */
 int main(int argc, char **argv)
 {
-
     QApplication app(argc, argv);
-    Calculator calculator; ///< Calc // ПОЧЕМУ НЕ РАБОТАЕТ?
+
+    Calculator calculator;
+
     calculator.setWindowTitle("Calculator");
     calculator.resize(230, 200);
     calculator.show();
+
     return app.exec();
 }
