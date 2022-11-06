@@ -25,6 +25,7 @@
  * \include QWidget
  * \include QStack
  */
+
 #include <QWidget>
 #include <QStack>
 
