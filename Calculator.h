@@ -26,7 +26,7 @@
  * \include QStack
  */
 
-#include <QWidget>
+#include <QtWidgets>
 #include <QStack>
 
 /// \brief Этот класс лежит в библиотеке

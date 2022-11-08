@@ -19,7 +19,7 @@
 /**
  * \include QtWidgets
  */
-#include <QWidget>
+#include <QtWidgets>
 
 /**
  * \include Calculator.h
